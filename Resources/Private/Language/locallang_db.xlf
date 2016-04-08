@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-04-08T12:28:39Z" product-name="ehfaq">
+		<header/>
+		<body>
+			<trans-unit id="tx_ehfaq_domain_model_faq">
+				<source>F A Q</source>
+			</trans-unit>
+			<trans-unit id="tx_ehfaq_domain_model_faq.question">
+				<source>Question</source>
+			</trans-unit>
+			<trans-unit id="tx_ehfaq_domain_model_faq.answer">
+				<source>Answer</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,20 @@
+{
+  "name": "elmarhinz/faq",
+  "description": "Just another FAQ based on the Extras/Fluid combo. Questions and and answers are edited in the BE.",
+  "autoload": {
+    "psr-4": {
+      "ElmarHinz\\Faq\\": "Classes/"
+    }
+  },
+  "type": "typo3-cms-extension",
+  "keywords": [
+    "TYPO3 CMS",
+    "FAQ"
+  ],
+  "homepage": "https://github.com/elmar-hinz",
+  "license": ["GPL-2.0+"],
+  "support": {
+    "issues": "https://github.com/elmar-hinz"
+  }
+
+}

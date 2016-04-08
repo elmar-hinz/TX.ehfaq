@@ -1,0 +1,110 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    87,
+                    66
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": true,
+                    "_default1_show": false,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": []
+                },
+                "name": "FAQ",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "A pair of question and answer.",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "83951479700"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "question",
+                            "propertyType": "String",
+                            "uid": "368422990493"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "answer",
+                            "propertyType": "RichText",
+                            "uid": "780726381042"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [],
+        "description": "Just another FAQ based on the Extras\/Fluid combo. Questions and and answers are edited in the BE. ",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 7.6.0-7.6.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "7.6.0-7.6.99",
+            "version": "0.0.1"
+        },
+        "extensionKey": "ehfaq",
+        "name": "Simple FAQ",
+        "originalExtensionKey": "ehfaq",
+        "originalVendorName": "ElmarHinz",
+        "persons": [
+            {
+                "company": "Elmar Hinz",
+                "email": "t3elmar@gmail.com",
+                "name": "Elmar Hinz Distribution",
+                "role": "Product Manager"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "FAQ=>list",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "key": "faq",
+                "name": "FAQ"
+            }
+        ],
+        "vendorName": "ElmarHinz"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2016-04-08 12:28",
+        "extension_builder_version": "7.6.0",
+        "be_user": " (1)"
+    }
+}
