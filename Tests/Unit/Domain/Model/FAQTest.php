@@ -76,4 +76,62 @@ class FAQTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
         );
 
     }
+
+    /**
+     * @test
+     */
+    public function getImagesReturnsInitialValueForFileReference()
+    {
+        $newObjectStorage = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
+        self::assertEquals(
+            $newObjectStorage,
+            $this->subject->getImages()
+        );
+
+    }
+
+    /**
+     * @test
+     */
+    public function setImagesForFileReferenceSetsImages()
+    {
+        $image = new \TYPO3\CMS\Extbase\Domain\Model\FileReference();
+        $objectStorageHoldingExactlyOneImages = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
+        $objectStorageHoldingExactlyOneImages->attach($image);
+        $this->subject->setImages($objectStorageHoldingExactlyOneImages);
+
+        self::assertAttributeEquals(
+            $objectStorageHoldingExactlyOneImages,
+            'images',
+            $this->subject
+        );
+
+    }
+
+    /**
+     * @test
+     */
+    public function addImageToObjectStorageHoldingImages()
+    {
+        $image = new \TYPO3\CMS\Extbase\Domain\Model\FileReference();
+        $imagesObjectStorageMock = $this->getMock(\TYPO3\CMS\Extbase\Persistence\ObjectStorage::class, ['attach'], [], '', false);
+        $imagesObjectStorageMock->expects(self::once())->method('attach')->with(self::equalTo($image));
+        $this->inject($this->subject, 'images', $imagesObjectStorageMock);
+
+        $this->subject->addImage($image);
+    }
+
+    /**
+     * @test
+     */
+    public function removeImageFromObjectStorageHoldingImages()
+    {
+        $image = new \TYPO3\CMS\Extbase\Domain\Model\FileReference();
+        $imagesObjectStorageMock = $this->getMock(\TYPO3\CMS\Extbase\Persistence\ObjectStorage::class, ['detach'], [], '', false);
+        $imagesObjectStorageMock->expects(self::once())->method('detach')->with(self::equalTo($image));
+        $this->inject($this->subject, 'images', $imagesObjectStorageMock);
+
+        $this->subject->removeImage($image);
+
+    }
 }

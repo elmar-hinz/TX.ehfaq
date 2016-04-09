@@ -3,8 +3,8 @@
         {
             "config": {
                 "position": [
-                    87,
-                    66
+                    276,
+                    58
                 ]
             },
             "name": "New Model Object",
@@ -37,8 +37,8 @@
                             "allowedFileTypes": "",
                             "maxItems": "1",
                             "propertyDescription": "",
-                            "propertyIsExcludeField": true,
-                            "propertyIsRequired": false,
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": true,
                             "propertyName": "question",
                             "propertyType": "String",
                             "uid": "368422990493"
@@ -47,11 +47,21 @@
                             "allowedFileTypes": "",
                             "maxItems": "1",
                             "propertyDescription": "",
-                            "propertyIsExcludeField": true,
-                            "propertyIsRequired": false,
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": true,
                             "propertyName": "answer",
                             "propertyType": "RichText",
                             "uid": "780726381042"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "10",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "images",
+                            "propertyType": "Image",
+                            "uid": "274794928227"
                         }
                     ]
                 },
@@ -103,7 +113,7 @@
     },
     "wires": [],
     "log": {
-        "last_modified": "2016-04-08 12:28",
+        "last_modified": "2016-04-08 07:48",
         "extension_builder_version": "7.6.0",
         "be_user": " (1)"
     }

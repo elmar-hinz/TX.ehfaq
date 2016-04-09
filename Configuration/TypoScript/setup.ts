@@ -18,37 +18,11 @@ plugin.tx_ehfaq_faq {
   mvc {
     #callDefaultActionIfActionCantBeResolved = 1
   }
+  settings.images {
+    maxWidth = {$plugin.tx_ehfaq_faq.settings.images.maxWidth}
+    maxHeight = {$plugin.tx_ehfaq_faq.settings.images.maxHeight}
+  }
 }
+plugin.tx_ehfaq_faq.persistence.storagePid >
 
-plugin.tx_ehfaq._CSS_DEFAULT_STYLE (
-    textarea.f3-form-error {
-        background-color:#FF9F9F;
-        border: 1px #FF0000 solid;
-    }
 
-    input.f3-form-error {
-        background-color:#FF9F9F;
-        border: 1px #FF0000 solid;
-    }
-
-    .tx-ehfaq table {
-        border-collapse:separate;
-        border-spacing:10px;
-    }
-
-    .tx-ehfaq table th {
-        font-weight:bold;
-    }
-
-    .tx-ehfaq table td {
-        vertical-align:top;
-    }
-
-    .typo3-messages .message-error {
-        color:red;
-    }
-
-    .typo3-messages .message-ok {
-        color:green;
-    }
-)

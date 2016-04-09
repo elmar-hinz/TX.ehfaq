@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2016-04-08T12:28:39Z" product-name="ehfaq">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-04-08T19:48:08Z" product-name="ehfaq">
 		<header/>
 		<body>
 			<trans-unit id="tx_ehfaq_domain_model_faq">
@@ -11,6 +11,9 @@
 			</trans-unit>
 			<trans-unit id="tx_ehfaq_domain_model_faq.answer">
 				<source>Answer</source>
+			</trans-unit>
+			<trans-unit id="tx_ehfaq_domain_model_faq.images">
+				<source>Images</source>
 			</trans-unit>
 		</body>
 	</file>

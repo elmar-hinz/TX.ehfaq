@@ -1,5 +1,11 @@
 
 plugin.tx_ehfaq_faq {
+  settings.images {
+    # cat=plugin.tx_ehfaq_faq/dims; type=string; label=Max width of images (FE)
+    maxWidth = 200
+    # cat=plugin.tx_ehfaq_faq/dims; type=string; label=Max height of images (FE)
+    maxHeight = 200
+  }
   view {
     # cat=plugin.tx_ehfaq_faq/file; type=string; label=Path to template root (FE)
     templateRootPath =
