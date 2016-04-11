@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Developer Manual &mdash; TYPO3 1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="TYPO3 1 documentation" href="../Index.html" />
+    <link rel="next" title="Users Manual" href="../User/Index.html" />
+    <link rel="prev" title="Administrator Manual" href="../Administrator/Index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../User/Index.html" title="Users Manual"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../Administrator/Index.html" title="Administrator Manual"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../Index.html">TYPO3 1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="developer-manual">
+<span id="id1"></span><h1>Developer Manual<a class="headerlink" href="#developer-manual" title="Permalink to this headline">¶</a></h1>
+<p>This usage of this extensions follows the standards of extensions based on
+<cite>Extbase</cite> and <cite>FLUID</cite>. You can adjust the FLUID templates a usual, by adding
+your template folders to the <cite>TypoScript</cite>.</p>
+<div class="section" id="faq">
+<span id="developer-faq"></span><h2>FAQ<a class="headerlink" href="#faq" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="how-do-i-set-the-sys-folder-with-the-entries">
+<h3>How do I set the sys folder with the entries?<a class="headerlink" href="#how-do-i-set-the-sys-folder-with-the-entries" title="Permalink to this headline">¶</a></h3>
+<p>The sys folder with the entries is either selected in the plugins form or can
+be set in the TypoScript constants by providing a <em>Default storage PID</em>.</p>
+</div>
+<div class="section" id="how-do-i-set-the-size-of-the-images">
+<h3>How do I set the size of the images?<a class="headerlink" href="#how-do-i-set-the-size-of-the-images" title="Permalink to this headline">¶</a></h3>
+<p>The maximum size of the images is set in the TypoScript constants as maximum
+width and maximum height. The rest is to be controlled by CSS styles.</p>
+</div>
+<div class="section" id="why-isn-t-the-js-folding-working">
+<h3>Why isn&#8217;t the JS folding working?<a class="headerlink" href="#why-isn-t-the-js-folding-working" title="Permalink to this headline">¶</a></h3>
+<p>The JS file depends on <cite>JQuery</cite>. It needs to be included after the <cite>jQuery</cite>
+library. The JS file is included by the TS <cite>page.includeJSFooter</cite> directive.
+Typically jQuery would be included by the <cite>page.includeJSFooterlibs.jquery</cite>
+directive to be included before:</p>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">page.includeJSFooterlibs.jquery = path/to/jquery.min.js</span>
+<span class="x">page.includeJSFooter.ehfaq = EXT:ehfaq/Resources/Public/JavaScript/main.js</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="how-do-i-customize-the-templates">
+<h3>How do I customize the templates?<a class="headerlink" href="#how-do-i-customize-the-templates" title="Permalink to this headline">¶</a></h3>
+<p>In the TypoScript constants you can set your own template root directories for
+templates, partials and layout.</p>
+</div>
+<div class="section" id="i-customized-the-templates-why-isn-t-the-js-folding-working-any-more">
+<h3>I customized the templates. Why isn&#8217;t the JS folding working any more?<a class="headerlink" href="#i-customized-the-templates-why-isn-t-the-js-folding-working-any-more" title="Permalink to this headline">¶</a></h3>
+<p>To keep the JS script working your templates must keep the classes in the given
+hierarchy, while you can freely customize the HTML tags:</p>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">.tx-ehfaq</span>
+<span class="x">    .tx-ehfaq-topic</span>
+<span class="x">        .tx-ehfaq-topic-header</span>
+<span class="x">        .tx-ehfaq-topic-body</span>
+<span class="x">    .tx-ehfaq-topic</span>
+<span class="x">        .tx-ehfaq-topic-header</span>
+<span class="x">        .tx-ehfaq-topic-body</span>
+</pre></div>
+</div>
+<p>There must be a parent-child relation between <cite>.tx-ehfaq-topic</cite> and
+<cite>.tx-ehfaq-header</cite>.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../Index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Developer Manual</a><ul>
+<li><a class="reference internal" href="#faq">FAQ</a><ul>
+<li><a class="reference internal" href="#how-do-i-set-the-sys-folder-with-the-entries">How do I set the sys folder with the entries?</a></li>
+<li><a class="reference internal" href="#how-do-i-set-the-size-of-the-images">How do I set the size of the images?</a></li>
+<li><a class="reference internal" href="#why-isn-t-the-js-folding-working">Why isn&#8217;t the JS folding working?</a></li>
+<li><a class="reference internal" href="#how-do-i-customize-the-templates">How do I customize the templates?</a></li>
+<li><a class="reference internal" href="#i-customized-the-templates-why-isn-t-the-js-folding-working-any-more">I customized the templates. Why isn&#8217;t the JS folding working any more?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../Administrator/Index.html"
+                        title="previous chapter">Administrator Manual</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../User/Index.html"
+                        title="next chapter">Users Manual</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/Developer/Index.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../User/Index.html" title="Users Manual"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../Administrator/Index.html" title="Administrator Manual"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../Index.html">TYPO3 1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, Elmar Hinz.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.
+    </div>
+  </body>
+</html>

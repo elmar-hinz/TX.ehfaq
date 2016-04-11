@@ -10,13 +10,7 @@ plugin.tx_ehfaq_faq {
   }
   persistence {
     storagePid = {$plugin.tx_ehfaq_faq.persistence.storagePid}
-    #recursive = 1
-  }
-  features {
-    #skipDefaultArguments = 1
-  }
-  mvc {
-    #callDefaultActionIfActionCantBeResolved = 1
+    recursive = 1
   }
   settings.images {
     maxWidth = {$plugin.tx_ehfaq_faq.settings.images.maxWidth}
@@ -25,4 +19,5 @@ plugin.tx_ehfaq_faq {
 }
 plugin.tx_ehfaq_faq.persistence.storagePid >
 
+page.includeJSFooter.ehfaq = typo3conf/ext/ehfaq/Resources/Public/JavaScript/main.js
 

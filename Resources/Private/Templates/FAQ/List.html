@@ -3,10 +3,10 @@
     <f:layout name="Default" />
     <f:section name="main">
         <f:for each="{fAQs}" as="fAQ">
-            <section class="tx-ehfaq-entry">
-                <header><h1>{fAQ.question}</h1></header>
-                <f:if condition="{faQ.images">
-                    <div class="ce-intext">
+            <section class="tx-ehfaq-topic">
+                <header class="tx-ehfaq-topic-header"><h1>{fAQ.question}</h1></header>
+                <div class="tx-ehfaq-topic-body ce-intext">
+                    <f:if condition="{faQ.images">
                         <f:for each="{fAQ.images}" as="image">
                             <f:alias map="{description: image.originalResource.description}">
                                 <f:if condition="{description}">
@@ -28,9 +28,9 @@
                                 </f:if>
                             </f:alias>
                         </f:for>                                          
-                    </div>
-                </f:if>
-                <f:format.html>{fAQ.answer}</f:format.html>
+                    </f:if>
+                    <f:format.html>{fAQ.answer}</f:format.html>
+                </div>
             </section>
         </f:for>
     </f:section>
