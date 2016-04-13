@@ -52,3 +52,11 @@ Manually sorting the FAQ Entries
 On the left side select the module ``WEB > List``. In the page tree select the
 sysfolder where to store the entries. Below the list mark the checkbox 
 ``Extended view`` to display the arrow buttons for to sort the entries.
+
+Advanced Features
+-----------------
+
+You may organize the entries into multiple sysfolders. It's possible to select
+the folders one by one in the plugins form field ``Record Storage Page``.
+In the form field ``Recursive`` you can set levels of recursion, if you like 
+to organize the entries as a tree of folders.
