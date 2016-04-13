@@ -12,7 +12,7 @@ Simple FAQ
 =============================================================
 
 Questions, answers, images and a little animation.
-
+--------------------------------------------------
 
 .. only:: html
 
@@ -26,10 +26,12 @@ Questions, answers, images and a little animation.
 		en
 
 	:Description:
-		Just another FAQ based on the Extras/Fluid combo. Questions and and answers are edited in the BE. 
+                Questions, answers, images and a little animation.
+		Just another FAQ based on the Extras/Fluid combo.
+                No FE editing.
 
 	:Keywords:
-		comma,separated,list,of,keywords
+		faq, questions, answers, images, jQuery, foldout
 
 	:Copyright:
 		2016

@@ -12,16 +12,18 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Simple FAQ',
-    'description' => 'Just another FAQ based on the Extras/Fluid combo. Questions and and answers are edited in the BE. ',
+    'description' => 
+        'Questions, answers, images and a little animation.
+         Just another FAQ based on the Extras/Fluid combo. No FE editing.',
     'category' => 'plugin',
     'author' => 'Elmar Hinz Distribution',
     'author_email' => 't3elmar@gmail.com',
-    'state' => 'alpha',
+    'state' => 'beta',
     'internal' => '',
     'uploadfolder' => '0',
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
-    'version' => '0.0.1',
+    'version' => '1.0.0',
     'constraints' => [
         'depends' => [
             'typo3' => '7.6.0-7.6.99',

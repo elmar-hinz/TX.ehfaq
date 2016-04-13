@@ -20,7 +20,8 @@ return [
             'endtime' => 'endtime',
         ],
         'searchFields' => 'question,answer,images,',
-        'iconfile' => 'EXT:ehfaq/Resources/Public/Icons/tx_ehfaq_domain_model_faq.gif'
+        'iconfile' => 'EXT:ehfaq/Resources/Public/Icons/tx_ehfaq_domain_model_faq.gif',
+        'sortby' => 'sorting'
     ],
     'interface' => [
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, question, answer, images',

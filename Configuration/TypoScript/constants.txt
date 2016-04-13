@@ -14,8 +14,8 @@ plugin.tx_ehfaq_faq {
     # cat=plugin.tx_ehfaq_faq/file; type=string; label=Path to template layouts (FE)
     layoutRootPath =
   }
-  persistence {
-    # cat=plugin.tx_ehfaq_faq//a; type=string; label=Default storage PID
-    storagePid =
+  persitence {
+    # cat=plugin.tx_ehfaq_faq; type=boolean; label=Recurse into subfolders
+    recursive = 0
   }
 }

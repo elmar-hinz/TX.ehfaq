@@ -82,10 +82,14 @@ Storage PID of FAQ records
         plugin.tx_ehfaq_faq.persistence
     Data type
         integer
+    Default
+        Not set at all.
     Description
-        The ID of the sys folder, that keeps the FAQ records. The folder can 
-        also be selected in the plugins form. The order of precedence in case
-        both are set is currently undefined.
+        The ID of the sys folder, that keeps the FAQ records.
+    Important
+        If set, it will overrule the settings in the plugin form even if an
+        empty value is provided. This strange behaviour may be caused by a 
+        possible bug in the current extbase library and may change in future.
 
 Recurse into sub folders of the storage sys folder
 """"""""""""""""""""""""""""""""""""""""""""""""""
@@ -96,9 +100,10 @@ Recurse into sub folders of the storage sys folder
     Data type
         bool
     Default
-        1
+        0
     Description
-        If true recurse into sub folders of the storage sys folder.
+        If 1 (true), recurse infinite into sub folders, else the settings of 
+        the plugin forms take precedence.
         
 Folder with FLUID templates to customize the HTML
 """""""""""""""""""""""""""""""""""""""""""""""""
@@ -143,9 +148,7 @@ Folder with FLUID partials to customize the HTML
 
             plugin.tx_ehfaq_faq.view.partialRootPaths {
                 10 = EXT:myextension/Resources/Private/Partials/
-            }
-
-        
+            }        
 
 Folder with FLUID layouts to customize the HTML
 """""""""""""""""""""""""""""""""""""""""""""""

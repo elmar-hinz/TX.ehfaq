@@ -14,11 +14,11 @@ Links
 :TER:
 	https://typo3.org/extensions/repository/view/ehfaq
 
-:Bug Tracker:
-	https://forge.typo3.org/projects/extension-ehfaq/issues
-
 :Git Repository:
 	https://github.com/elmar-hinz/TX.ehfaq
+
+:Bug Tracker:
+        https://github.com/elmar-hinz/TX.ehfaq/issues
 
 :Contact:
 	`@elmarhinz <https://twitter.com/elmarhinz>`__

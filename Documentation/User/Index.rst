@@ -11,57 +11,44 @@
 Users Manual
 ============
 
-Target group: **Editors**
+Installing the Plugin
+---------------------
 
-Here should be described how to use the extension from the editor perspective.
+On the left side select the module ``WEB > Page``.
 
-- How does it work?
-
-  - works well when doing this.
-
-  - does not work so well when doing that
-    but we can live with it.
-
-  - **mind indentation when nesting lists**.
-
-- How to install the plugin on a web page?
-
-- What options are available?
-
-Language should be non-technical, explaining, using small examples.
-Don't use to many acronyms unless they have been explained.
-Don't be confusing by putting information targeting administrators.
+Create the page where to output the ``Simple FAQ``. Create a sysfolder, 
+where you like to store the FAQ entries.
 
 .. tip::
 
-   Take a break from time to time.
+    It's a good idea to place this folder below the page where you like
+    to output the FAQ. By this it is easy to spot the location of the folder.
 
-Admonitions should be used to warn the users about potential
-pitfalls, attract their attention to important elements
-or just add some notes for for information (further reading,
-for example).
+Insert a new content element into the page. Select ``General Plugin`` in the
+wizard. In the tab ``Plugin`` open the dropdown ``Selected Plugin`` and choose
+``Simple FAQ``. In the field ``Record Storage Page`` select the sysfolder where
+you store the FAQ. 
+
+In the tab ``Genaral`` adjust ``Column``, ``Language`` and ``Header`` as usual.
+
+Creating and Editing the FAQ Entries
+------------------------------------
+
+On the left side select the module ``WEB > List``. In the page tree select the
+sysfolder where to store the entries. Click the ``Create new record`` icon.
+Select ``Simple FAQ > FAQ`` as new record. Edit at least the fields ``Question``
+and ``Answer``. Optionally you may add images like known from other content
+elements. Save.
+
+Editing, hiding and deleting work as usual.
 
 .. important::
 
-   Remember to always say "please" when asking your software to
-   do something.
+    After all operations on the records flush the FE caches to rebuild the page.
 
-Provide screenshots as needed for making things clear. When creating
-screenshots, try using the `Introduction Package <http://demo.typo3.org/>`_
-as a neutral TYPO3 CMS instance.
+Manually sorting the FAQ Entries
+--------------------------------
 
-.. figure:: ../Images/UserManual/BackendView.png
-   :width: 500px
-   :alt: Backend view
-
-   Default Backend view (caption of the image)
-
-   The Backend view of TYPO3 after the user has clicked on module "Page". (legend of the image)
-
-
-.. _user-faq:
-
-FAQ
----
-
-Possible subsection: FAQ
+On the left side select the module ``WEB > List``. In the page tree select the
+sysfolder where to store the entries. Below the list mark the checkbox 
+``Extended view`` to display the arrow buttons for to sort the entries.
