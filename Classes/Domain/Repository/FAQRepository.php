@@ -1,4 +1,5 @@
 <?php
+
 namespace ElmarHinz\Ehfaq\Domain\Repository;
 
 /***
