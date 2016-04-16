@@ -37,7 +37,7 @@ Questions, answers, images and a little animation.
 		2016
 
 	:Author:
-		Elmar Hinz Distribution
+		Elmar Hinz
 
 	:Email:
 		t3elmar@gmail.com

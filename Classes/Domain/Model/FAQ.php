@@ -9,7 +9,7 @@ namespace ElmarHinz\Ehfaq\Domain\Model;
  * For the full copyright and license information, please read the
  * LICENSE.txt file that was distributed with this source code.
  *
- *  (c) 2016 Elmar Hinz Distribution <t3elmar@gmail.com>, Elmar Hinz
+ *  (c) 2016 Elmar Hinz <t3elmar@gmail.com>
  *
  ***/
 
@@ -25,7 +25,7 @@ class FAQ extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @validate NotEmpty
      */
     protected $question = '';
-    
+
     /**
      * answer
      *
@@ -33,7 +33,7 @@ class FAQ extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @validate NotEmpty
      */
     protected $answer = '';
-    
+
     /**
      * images
      *
@@ -41,7 +41,7 @@ class FAQ extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @cascade remove
      */
     protected $images = null;
-    
+
     /**
      * Returns the question
      *
@@ -51,7 +51,7 @@ class FAQ extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         return $this->question;
     }
-    
+
     /**
      * Sets the question
      *
@@ -62,7 +62,7 @@ class FAQ extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         $this->question = $question;
     }
-    
+
     /**
      * Returns the answer
      *
@@ -72,7 +72,7 @@ class FAQ extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         return $this->answer;
     }
-    
+
     /**
      * Sets the answer
      *
@@ -83,7 +83,7 @@ class FAQ extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         $this->answer = $answer;
     }
-    
+
     /**
      * __construct
      */
@@ -92,7 +92,7 @@ class FAQ extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
         //Do not remove the next line: It would break the functionality
         $this->initStorageObjects();
     }
-    
+
     /**
      * Initializes all ObjectStorage properties
      * Do not modify this method!
@@ -105,7 +105,7 @@ class FAQ extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         $this->images = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
     }
-    
+
     /**
      * Adds a FileReference
      *
@@ -116,7 +116,7 @@ class FAQ extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         $this->images->attach($images);
     }
-    
+
     /**
      * Removes a FileReference
      *
@@ -127,7 +127,7 @@ class FAQ extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         $this->images->detach($imageToRemove);
     }
-    
+
     /**
      * Returns the images
      *
@@ -137,7 +137,7 @@ class FAQ extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         return $this->images;
     }
-    
+
     /**
      * Sets the images
      *

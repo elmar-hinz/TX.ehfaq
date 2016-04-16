@@ -19,7 +19,7 @@ conf.py:
   - - Index
     - ehfaq.tex
     - Simple FAQ
-    - Elmar Hinz Distribution
+    - Elmar Hinz
     - manual
   latex_elements:
     papersize: a4paper

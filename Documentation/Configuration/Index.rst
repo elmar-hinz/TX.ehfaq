@@ -38,7 +38,7 @@ Maximum image height
     Constant
         $plugin.tx_ehfaq_faq.settings.images.maxHeight
     Description
-        Maximum height of images in pixels. Maximum height and maximum width 
+        Maximum height of images in pixels. Maximum height and maximum width
         work together so that the proportion of the image is kept.
 
 Maximum image width
@@ -68,7 +68,7 @@ Path to foldout animation JS file
     Data type
         path
     Default
-        EXT:ehdistribution/Resources/Public/JavaScript/Vendor/jquery-1.11.2.min.js
+        EXT:ehfaq/Resources/Public/JavaScript/main.js
     Description
         Path to the JS file that does the foldout animation.
         It depends on the jQuery library, that needs to be included before.
@@ -88,7 +88,7 @@ Storage PID of FAQ records
         The ID of the sys folder, that keeps the FAQ records.
     Important
         If set, it will overrule the settings in the plugin form even if an
-        empty value is provided. This strange behaviour may be caused by a 
+        empty value is provided. This strange behaviour may be caused by a
         possible bug in the current extbase library and may change in future.
 
 Recurse into sub folders of the storage sys folder
@@ -102,9 +102,9 @@ Recurse into sub folders of the storage sys folder
     Default
         0
     Description
-        If 1 (true), recurse infinite into sub folders, else the settings of 
+        If 1 (true), recurse infinite into sub folders, else the settings of
         the plugin forms take precedence.
-        
+
 Folder with FLUID templates to customize the HTML
 """""""""""""""""""""""""""""""""""""""""""""""""
     Property
@@ -127,7 +127,7 @@ Folder with FLUID templates to customize the HTML
                 10 = EXT:myextension/Resources/Private/Templates/
             }
 
-        
+
 Folder with FLUID partials to customize the HTML
 """"""""""""""""""""""""""""""""""""""""""""""""
     Property
@@ -148,7 +148,7 @@ Folder with FLUID partials to customize the HTML
 
             plugin.tx_ehfaq_faq.view.partialRootPaths {
                 10 = EXT:myextension/Resources/Private/Partials/
-            }        
+            }
 
 Folder with FLUID layouts to customize the HTML
 """""""""""""""""""""""""""""""""""""""""""""""

@@ -12,11 +12,11 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Simple FAQ',
-    'description' => 
+    'description' =>
         'Questions, answers, images and a little animation.
          Just another FAQ based on the Extras/Fluid combo. No FE editing.',
     'category' => 'plugin',
-    'author' => 'Elmar Hinz Distribution',
+    'author' => 'Elmar Hinz',
     'author_email' => 't3elmar@gmail.com',
     'state' => 'beta',
     'internal' => '',

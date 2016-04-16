@@ -9,7 +9,7 @@ namespace ElmarHinz\Ehfaq\Controller;
  * For the full copyright and license information, please read the
  * LICENSE.txt file that was distributed with this source code.
  *
- *  (c) 2016 Elmar Hinz Distribution <t3elmar@gmail.com>, Elmar Hinz
+ *  (c) 2016 Elmar Hinz <t3elmar@gmail.com>
  *
  ***/
 
@@ -25,7 +25,7 @@ class FAQController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      * @inject
      */
     protected $fAQRepository = null;
-    
+
     /**
      * action list
      *
