@@ -1,12 +1,18 @@
 Change log
 
+2016-04-17  Elmar Hinz <t3elmar@gmail.com>
+
+    * version 1.0.2
+    * Adding unit tests
+
+2016-04-16  Elmar Hinz <t3elmar@gmail.com>
+
+    * version 1.0.1
+    * Fix of author's name
+
 2016-04-16  Elmar Hinz <t3elmar@gmail.com>
 
     * initial release version 1.0.0
     * Questions, Answers (RTE), Images
     * Foldout animation
 
-2016-04-16  Elmar Hinz <t3elmar@gmail.com>
-
-    * version 1.0.1
-    * Fix of author's name
