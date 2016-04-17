@@ -2,11 +2,6 @@
     "name": "elmarhinz/faq",
     "type": "typo3-cms-extension",
     "description": "Just another FAQ based on the Extras/Fluid combo. Questions and and answers are edited in the BE.",
-    "autoload": {
-        "psr-4": {
-            "ElmarHinz\\Faq\\": "Classes/"
-        }
-    },
     "keywords": [
         "TYPO3 CMS",
         "ehfaq",
@@ -17,14 +12,53 @@
         "foldout"
     ],
     "homepage": "https://github.com/elmar-hinz/TX.ehfaq",
+    "authors": [
+        {
+            "name": "Elmar Hinz",
+            "role": "Developer",
+            "homepage": ""
+        }
+    ],
     "license": [
         "GPL-2.0+"
     ],
     "support": {
         "issues": "https://github.com/elmar-hinz/TX.ehfaq/issues"
     },
+    "require": {
+        "typo3/cms-core": ">=7.6.0,<8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ElmarHinz\\Ehfaq\\": "Classes/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ElmarHinz\\Ehfaq\\Tests\\": "Tests"
+        }
+    },
     "replace": {
         "ehfaq": "self.version",
         "typo3-ter/ehfaq": "self.version"
+    },
+    "config": {
+        "vendor-dir": ".Build/vendor",
+        "bin-dir": ".Build/bin"
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "mkdir -p .Build/Web/typo3conf/ext/",
+            "[ -L .Build/Web/typo3conf/ext/ehfaq ] || ln -snvf ../../../../. .Build/Web/typo3conf/ext/ehfaq"
+        ]
+    },
+    "extra": {
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": ".Build/Web"
+        }
     }
 }
