@@ -38,7 +38,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "ElmarHinz\\Ehfaq\\Tests\\": "Tests"
+            "ElmarHinz\\Ehfaq\\Tests\\": "Tests",
+            "TYPO3\\CMS\\Core\\Tests\\": ".Build/vendor/typo3/cms/typo3/sysext/core/Tests/"
         }
     },
     "replace": {
