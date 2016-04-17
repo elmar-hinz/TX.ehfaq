@@ -114,7 +114,7 @@ class FAQ extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      */
     public function addImage(\TYPO3\CMS\Extbase\Domain\Model\FileReference $image)
     {
-        $this->images->attach($images);
+        $this->images->attach($image);
     }
 
     /**
