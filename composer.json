@@ -1,7 +1,7 @@
 {
     "name": "elmarhinz/faq",
     "type": "typo3-cms-extension",
-    "description": "Just another FAQ based on the Extras/Fluid combo. Questions and and answers are edited in the BE.",
+    "description": "Just another FAQ based on the Extbase/Fluid combo. Questions and and answers are edited in the BE.",
     "keywords": [
         "TYPO3 CMS",
         "ehfaq",
