@@ -1,5 +1,10 @@
 Change log
 
+2016-04-19  Elmar Hinz <t3elmar@gmail.com>
+
+    * version 1.0.4
+    * Replacing Settings.yml by Settings.cgf
+
 2016-04-18  Elmar Hinz <t3elmar@gmail.com>
 
     * version 1.0.3
