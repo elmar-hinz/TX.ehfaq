@@ -73,7 +73,7 @@
     ],
     "properties": {
         "backendModules": [],
-        "description": "Just another FAQ based on the Extras\/Fluid combo. Questions and and answers are edited in the BE. ",
+        "description": "Questions, answers, images and a little accordion animation. Just another FAQ based on the Extbase\/Fluid combo. No FE editiong. ",
         "emConf": {
             "category": "plugin",
             "custom_category": "",

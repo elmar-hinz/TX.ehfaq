@@ -27,7 +27,7 @@ Questions, answers, images and a little animation.
 
 	:Description:
                 Questions, answers, images and a little animation.
-		Just another FAQ based on the Extras/Fluid combo.
+		Just another FAQ based on the Extbase/Fluid combo.
                 No FE editing.
 
 	:Keywords:
