@@ -2,6 +2,11 @@ Change log
 
 2016-04-20  Elmar Hinz <t3elmar@gmail.com>
 
+    * version 1.0.6
+    * Update Readme.md
+
+2016-04-20  Elmar Hinz <t3elmar@gmail.com>
+
     * version 1.0.5
     * Fix typo Extras => Extbase
     * Add the Settings.yml again
