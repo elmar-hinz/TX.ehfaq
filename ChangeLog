@@ -1,5 +1,10 @@
 Change log
 
+2016-04-22  Elmar Hinz <t3elmar@gmail.com>
+
+    * version 1.0.8
+    * Doc: Publishing to readthedocs.org too
+
 2016-04-20  Elmar Hinz <t3elmar@gmail.com>
 
     * version 1.0.7
