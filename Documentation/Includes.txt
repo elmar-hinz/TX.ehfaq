@@ -27,3 +27,7 @@
 .. image:: https://travis-ci.org/elmar-hinz/TX.ehfaq.svg?branch=master
     :target: https://travis-ci.org/elmar-hinz/TX.ehfaq
 
+.. image:: https://readthedocs.org/projects/typo3-extension-ehfaq/badge/?version=latest
+    :target: http://typo3-extension-ehfaq.readthedocs.org/en/latest/?badge=latest
+    :alt: Documentation Status
+
