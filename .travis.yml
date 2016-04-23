@@ -4,11 +4,12 @@ php:
   # typo3/cms 7.6.0 requires php >=5.5.0
   - 5.5
   - 5.6
-  - 7.0
+  # PHP 7 confclicts with 7.6.0, 7.6.1
+  # - 7.0
 
 env:
   matrix:
-    - TYPO3_VERSION=7.6.1
+    - TYPO3_VERSION=7.6.0
     - TYPO3_VERSION=7.6.5
 
 sudo: false

@@ -19,3 +19,11 @@
 .. role::   php(code)
 
 .. highlight:: php
+
+.. ==================================================
+.. Status images
+.. --------------------------------------------------
+
+.. image:: https://travis-ci.org/elmar-hinz/TX.ehfaq.svg?branch=master
+    :target: https://travis-ci.org/elmar-hinz/TX.ehfaq
+
