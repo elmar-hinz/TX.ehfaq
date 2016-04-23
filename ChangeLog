@@ -1,5 +1,11 @@
 Change log
 
+2016-04-23  Elmar Hinz <t3elmar@gmail.com>
+
+    * version 1.0.9
+    * Improving travis setup
+    * Try to include the status badges
+
 2016-04-22  Elmar Hinz <t3elmar@gmail.com>
 
     * version 1.0.8
