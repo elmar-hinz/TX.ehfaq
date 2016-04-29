@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<dataset>
+
+	<pages>
+		<uid>1</uid>
+		<pid>0</pid>
+		<title>FAQ</title>
+	</pages>
+
+	<tx_ehfaq_domain_model_faq>
+        <uid>1</uid>
+        <pid>1</pid>
+        <sorting>128</sorting>
+        <question>Question 2</question>
+        <answer>Answer 2</answer>
+	</tx_ehfaq_domain_model_faq>
+
+	<tx_ehfaq_domain_model_faq>
+        <uid>2</uid>
+        <pid>1</pid>
+        <sorting>256</sorting>
+        <question>Question 3</question>
+        <answer>Answer 3</answer>
+	</tx_ehfaq_domain_model_faq>
+
+	<tx_ehfaq_domain_model_faq>
+        <uid>3</uid>
+        <pid>1</pid>
+        <sorting>64</sorting>
+        <question>Question 1</question>
+        <answer>Answer 1</answer>
+	</tx_ehfaq_domain_model_faq>
+
+</dataset>
