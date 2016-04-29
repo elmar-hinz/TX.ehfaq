@@ -1,8 +1,6 @@
 <?php
 namespace ElmarHinz\Ehfaq\Tests\Functional;
 
-use TYPO3\CMS\Core\Database\DatabaseConnection;
-
 /**
  * Test case.
  *
